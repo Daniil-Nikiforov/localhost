@@ -1,0 +1,181 @@
+*{
+    background: #1e212b;
+    color: #ffc800;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 22px;
+}
+body{
+    height: 100vh;
+    /*display: flex;
+    align-items: center;
+    justify-content: center;*/
+    font-family: Georgia, serif;
+}
+.row:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+.row { display: inline-block; }
+
+* html .row { height: 1%; }
+.row { display: block; }
+
+
+.content{
+    min-width: 70%;
+    float: left;
+}
+.sidebar1{
+    width: 10%;
+    float: left;
+    padding-right: 10px;
+}
+.inner-sidebar1{
+    background:#d34d43;
+    min-height: 870px;
+}
+.sidebar2{
+    width: 20%;
+    float: left;
+    padding-left: 10px;
+}
+.inner-sidebar2{
+    background:#ffc800;
+    min-height: 870px;
+}
+footer{
+    
+    margin-top: 10px;
+}
+
+/*Основные настройки*/
+input::placeholder{
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+}
+a{
+    font-weight: bold;
+    text-decoration: none;
+}
+p{
+    margin: 10px 0;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 410px;
+}
+input{
+    margin: 5px 0 20px 0;
+    padding: 10px;
+    border: unset;
+    border-bottom: 2px solid #ffffff;
+    outline: none;
+}
+button{
+    padding: 10px;
+    background: #ff8427;
+    color: #1e212b;
+    font-weight: bold;
+    border: unset;
+    cursor: pointer;
+}
+.msg{
+    border: 2px solid #ff8427;
+    border-radius: 3px;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+.logout{
+    text-align: center;
+}
+
+/*Меню*/
+
+
+.inner-header{
+    height: 65px;
+}
+nav{
+    margin: 0;
+    padding: 0;
+    display: table;
+    width: 100%;
+}
+nav li{
+    list-style: none;
+}
+nav > ul{
+    display: table-row;
+    justify-content: center;
+}
+nav > ul li{
+    display:table-cell;
+    position: relative;
+    border-right: 3px solid #ffc800;
+}
+nav > ul li:last-child{
+    border-right: 0px solid #1e212b;
+}
+nav > ul li:first-child{
+    border-left: 0px solid #1e212b;
+}
+nav > ul li a{
+    display: block;
+    z-index: 10;
+    cursor: pointer;
+    color: #ffffff;
+    background: #d34d43;
+    padding: 15px 40px 15px 40px;
+    transition: all 0.2s ease;
+    text-align: center;
+}
+nav li a:hover{
+    background-color: #ffc800;
+    color: #1e212b;
+    box-shadow: 1px 5px 10px -5px #1e212b;
+    transition: all 0.2s ease;
+}
+/*Панель элементов*/
+#inner-buttons div{
+    width: 50%;
+    height: 100px;
+    float: left;
+    color: #1d1d1d;
+    border: 2px solid #d34d43;
+    background: #ffffff;
+}
+#inner-buttons div:hover{
+    background-color: #ffc800;
+    color: #1e212b;
+    box-shadow: 1px 5px 10px -5px #ffc800;
+    transition: all 0.2s ease;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff;
+    font-size: 26px;
+    user-select: none;
+}
+.dropZone{
+    width: 100%;
+    height: 100%;
+}
+.inner-content{
+    background:#ffffff;
+    min-height: 870px;
+    display: flex;
+}
