@@ -73,7 +73,7 @@
             <!--Статистика-->
             <section class="sidebar2">
                 <div class="inner-sidebar2">
-                    dddddddddddddddddddddddddddddddss
+                    dddddddddddddddddddddddddddddddsssadsadasdqweqwrfasdvwqervwqvwrqewervqqrvweqwervqvwrevqerqwer
                 </div>
             </section>
             <!--Статистика 2   -->
