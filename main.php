@@ -12,7 +12,7 @@
     <script type="text/javascript" src="scripts/dragndrop.js" defer></script>
     <title>Главная страница</title>
 </head>
-<body>
+<body onload="main()">
     <div class="wrapper">
         <!--Меню-->
         <header>
@@ -64,16 +64,16 @@
                     </div>
                 </div>
             </section>
-            <!--Создатель схем-->
+            <!--Создатель схем, Работаю тут-->
             <section class="content">
-                <div class="inner-content">
-
+                <div class="myCanvas row">
+                    
                 </div>
             </section>
             <!--Статистика-->
             <section class="sidebar2">
                 <div class="inner-sidebar2">
-                    dddddddddddddddddddddddddddddddsssadsadasdqweqwrfasdvwqervwqvwrqewervqqrvweqwervqvwrevqerqwer
+                    
                 </div>
             </section>
             <!--Статистика 2   -->
