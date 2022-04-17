@@ -146,21 +146,28 @@ nav li a:hover{
     transition: all 0.2s ease;
 }
 /*Панель элементов*/
-#inner-buttons div{
+/*
+#inner-elements{
     width: 50%;
     height: 100px;
     float: left;
     color: #1d1d1d;
     border: 2px solid #d34d43;
-    background: #ffffff;
 }
-#inner-buttons div:hover{
+#inner-elements:hover{
     background-color: #ffc800;
     color: #1e212b;
     box-shadow: 1px 5px 10px -5px #ffc800;
     transition: all 0.2s ease;
+}*/
+.element{
+    width: 100px;
+    height: 50px; 
+    float: left;
+    border: 2px solid #d34d43;
+    user-select: none;   
 }
-.myCanvas{
+.inner-content{
     display: flex;
     background:#ffffff;
     min-height: 900px;

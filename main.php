@@ -32,41 +32,17 @@
         <div class="container row">
             <section class="sidebar1">
                 <div class="inner-sidebar1">
-                    <div class="buttons">
-                        <div id="inner-buttons">
-                            <!--
-                            <button id="element 1">
-                                1
-                            </button>
-                            <button id="element 2">
-                                2
-                            </button>
-                            <button id="element 3">
-                                3
-                            </button>
-                            <button id="element 4">
-                                4
-                            </button>
-                            <button id="element 5">
-                                5
-                            </button>
-                            <button id="element 6">
-                                6
-                            </button>
-                            <button id="element 7">
-                                7
-                            </button>
-                            <button id="element 8">
-                                8
-                            </button>
-                            -->
+                    <div class="elements">
+                        <div id="inner-elements">
+                            <img draggable="true" class="element" id="ePitanie" src="uploads/Block.png"  alt="">
+                            <img class="element" id="eResistor" src="uploads/Resistor.png"  alt="">
                         </div>
                     </div>
                 </div>
             </section>
             <!--Создатель схем, Работаю тут-->
             <section class="content">
-                <div class="myCanvas row">
+                <div class="inner-content row">
                     
                 </div>
             </section>
