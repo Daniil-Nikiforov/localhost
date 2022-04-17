@@ -34,7 +34,7 @@
                 <div class="inner-sidebar1">
                     <div class="elements">
                         <div id="inner-elements">
-                            <img draggable="true" class="element" id="ePitanie" src="uploads/Block.png"  alt="">
+                            <img draggable="true" onClick="createCopy()"class="element" id="ePitanie" src="uploads/Block.png"  alt="">
                             <img class="element" id="eResistor" src="uploads/Resistor.png"  alt="">
                         </div>
                     </div>
@@ -42,7 +42,7 @@
             </section>
             <!--Создатель схем, Работаю тут-->
             <section class="content">
-                <div class="inner-content row">
+                <div id="ic" class="inner-content row">
                     
                 </div>
             </section>

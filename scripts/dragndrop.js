@@ -1,35 +1,39 @@
 let Pitanie = document.getElementById('ePitanie');
-var Icontent = document.getElementsByClassName('inner-content');
+var Icontent = document.getElementById('ic');
+let PitanieCopy = null;
 
-//let copyPitanie = document.createElement(Pitanie);
-Pitanie.onmousedown=function(event){
-    let PitanieCopy = document.createElement('img');
-    let shiftX = event.clientX - Pitanie.getBoundingClientRect().left;
-    let shiftY = event.clientY - Pitanie.getBoundingClientRect().top;
+function createCopy(){
+    PitanieCopy = document.createElement('img');
     PitanieCopy.style.position='absolute';
     PitanieCopy.style.zIndex = 1000;
     PitanieCopy.style.width = 100 + 'px';
     PitanieCopy.style.border = 0;
     PitanieCopy.setAttribute('class','element');
+    PitanieCopy.setAttribute('draggable','true');
     PitanieCopy.src = 'uploads/Block.png';
-    document.body.append(PitanieCopy);
-    
-    moveAt(event.pageX,event.pageY);
+    Icontent.append(PitanieCopy);
 
-    function moveAt(pageX,pageY){
-        PitanieCopy.style.left = pageX-shiftX+'px';
-        PitanieCopy.style.top = pageY-shiftY+'px';
-    }
-    function onMouseMove(event){
+    PitanieCopy.onmousedown = function(event){
+        let shiftX = event.clientX - PitanieCopy.getBoundingClientRect().left;
+        let shiftY = event.clientY - PitanieCopy.getBoundingClientRect().top;
+        
         moveAt(event.pageX,event.pageY);
-    }
-    PitanieCopy.addEventListener('mousemove',onMouseMove);
-
-    PitanieCopy.onmouseup=function(){
-        PitanieCopy.removeEventListener('mousemove',onMouseMove);
-        PitanieCopy.onmouseup=null;
+    
+        function moveAt(pageX,pageY){
+            PitanieCopy.style.left = pageX - shiftX + 'px';
+            PitanieCopy.style.top = pageY - shiftY + 'px';
+        }
+        function onMouseMove(event){
+            moveAt(event.pageX,event.pageY);
+        }
+        document.addEventListener('mousemove',onMouseMove);
+    
+        PitanieCopy.onmouseup=function(){
+            document.removeEventListener('mousemove',onMouseMove);
+            PitanieCopy.onmouseup = null;
+        };
     };
-};
-PitanieCopy.ondragstart=function(){
-    return false;
-};
+    PitanieCopy.ondragstart = function(){
+        return false;
+    };
+}
