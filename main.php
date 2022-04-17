@@ -73,10 +73,10 @@
             <!--Статистика-->
             <section class="sidebar2">
                 <div class="inner-sidebar2">
-
+                    dddddddddddddddddddddddddddddddss
                 </div>
             </section>
-            <!--Статистика 2-->
+            <!--Статистика 2   -->
         </div>
     </div>
 
