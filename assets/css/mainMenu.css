@@ -121,7 +121,7 @@ nav > ul{
 nav > ul li{
     display:table-cell;
     position: relative;
-    border-right: 3px solid #1d1d1d;
+    border-right: 3px solid #ffc800;
 }
 nav > ul li:last-child{
     border-right: 0px solid #1e212b;
