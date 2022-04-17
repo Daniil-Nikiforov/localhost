@@ -34,7 +34,7 @@
                 <div class="inner-sidebar1">
                     <div class="buttons">
                         <div id="inner-buttons">
-                        sdsdewqewqeqweqweqweqwe
+                        
                         </div>
                     </div>
                 </div>
