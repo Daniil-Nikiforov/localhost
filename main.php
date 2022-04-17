@@ -48,9 +48,10 @@
             <!--Статистика-->
             <section class="sidebar2">
                 <div class="inner-sidebar2">
-
+                    dddddddddddddddddddddddddddddddsssadsadasdqweqwrfasdvwqervwqvwrqewervqqrvweqwervqvwrevqerqwer
                 </div>
             </section>
+            <!--Статистика 2   -->
         </div>
     </div>
 

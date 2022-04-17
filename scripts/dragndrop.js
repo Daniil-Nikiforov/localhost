@@ -16,5 +16,4 @@ for (let i = 0; i < 8; i++) {
 for (let i = 0; i < dropZones.length; i++) {
     dropZones[i].addEventListener('dragover',function(ev){ev.preventDefault();}) 
     dropZones[i].addEventListener('drop',function(ev){ev.target.append(dro);}) 
-    
 }
