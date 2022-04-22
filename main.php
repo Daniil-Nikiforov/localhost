@@ -9,7 +9,6 @@
 <head>
     <meta charset="UTF-8">
     <link rel = "stylesheet" href = "assets/css/mainMenu.css">
-    <script type="text/javascript" src="scripts/dragndrop.js" defer></script>
     <title>Главная страница</title>
 </head>
 <body onload="main()">
@@ -34,16 +33,42 @@
                 <div class="inner-sidebar1">
                     <div class="elements">
                         <div id="inner-elements">
-                            <img draggable="true" onClick="createCopy()"class="element" id="ePitanie" src="uploads/Block.png"  alt="">
-                            <img class="element" id="eResistor" src="uploads/Resistor.png"  alt="">
+                            <div draggable="true" onClick="createCopy(1)" class="element" id="ePitanie" style="background-size: 100% 100%; background-image:url(uploads/Block.png);  background-position: center center;"  alt="">
+                                <div class="leftSide"></div>
+                                <div class="rightSide"></div>
+                            </div>
+                            <div draggable="true" onClick="createCopy(2)" class="element" id="eResistor" style="background-size: 100% 100%; background-image:url(uploads/Resistor.png);  background-position: center center;"  alt="">
+                                <div class="leftSide"></div>
+                                <div class="rightSide"></div>
+                            </div>
+                            <div draggable="true" onClick="createCopy(3)" class="element" id="eButton" style="background-size: 100% 100%; background-image:url(uploads/Button.png);  background-position: center center;"  alt="">
+                                <div class="leftSide"></div>
+                                <div class="rightSide"></div>
+                            </div>
+                            <div draggable="true" onClick="createCopy(4)" class="element" id="eCondensator" style="background-size: 100% 100%; background-image:url(uploads/Condensator.png);  background-position: center center;"  alt="">
+                                <div class="leftSide"></div>
+                                <div class="rightSide"></div>
+                            </div>
+                            <div draggable="true" onClick="createCopy(5)" class="element" id="eSvetDiod" style="background-size: 100% 100%; background-image:url(uploads/SvetDiod.png);  background-position: center center;"  alt="">
+                                <div class="leftSide"></div>
+                                <div class="rightSide"></div>
+                            </div>
+                            <div draggable="true" onClick="createCopy(6)" class="element" id="eTransistor1" style="background-size: 100% 100%; background-image:url(uploads/Transistor1.png);  background-position: center center;"  alt="">
+                                <div class="leftSide"></div>
+                                <div class="rightSide"></div>
+                            </div>
+                            <div draggable="true" onClick="createCopy(7)" class="element" id="eTransistor2" style="background-size: 100% 100%; background-image:url(uploads/Transistor2.png);  background-position: center center;"  alt="">
+                                <div class="leftSide"></div>
+                                <div class="rightSide"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
             <!--Создатель схем, Работаю тут-->
-            <section class="content">
-                <div id="ic" class="inner-content row">
-                    
+            <section class="content row">
+                <div id="inner-content">
+                    <canvas id="canvas"></canvas>
                 </div>
             </section>
             <!--Статистика-->
@@ -56,6 +81,6 @@
         </div>
     </div>
 
-    
+<script type="text/javascript" src="scripts/dragndrop.js" defer></script>
 </body>
 </html>
